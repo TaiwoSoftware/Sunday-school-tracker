@@ -2,3 +2,122 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width:760px) {
+    .reduceWidth {
+        max-width: 40rem;
+    }
+}
+
+@media (max-width:670px) {
+    .reduceWidth {
+        max-width: 36rem;
+    }
+
+    .formStyle {
+        padding: 0;
+    }
+
+    .timeContainer {
+        margin-top: 1px;
+    }
+
+    .time {
+        display: none;
+    }
+}
+
+@media (max-width:569px) {
+    .reduceWidth {
+        max-width: 32rem;
+    }
+
+    .formStyle {
+        padding: 0;
+    }
+
+    .timeContainer {
+        margin-top: 1px;
+    }
+
+    .time {
+        display: none;
+    }
+}
+
+@media (max-width:520px) {
+    .reduceWidth {
+        max-width: 31rem;
+    }
+
+    .timeContainer {
+        margin-top: 1px;
+    }
+
+    .formStyle {
+        padding: 0;
+    }
+}
+
+@media (max-width:410px) {
+    .reduceWidth {
+        max-width: 25rem;
+    }
+
+    .formStyle {
+        padding: 0;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .timeContainer {
+        margin-top: 1px;
+    }
+
+    .upperContainer {
+        margin-top: -2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .reduceWidth {
+        max-width: 24rem;
+    }
+
+    .timeContainer {
+        margin-top: 1rem;
+    }
+
+    .container {
+        display: block;
+    }
+}
+
+@media (max-width: 440px) {
+    .reduceWidth {
+        max-width: 24rem;
+    }
+
+    .timeContainer {
+        margin-top: 1rem;
+    }
+
+    .container {
+        display: block;
+    }
+}
+
+@media (max-width: 390px) {
+    .reduceWidth {
+        max-width: 20rem;
+    }
+
+    .timeContainer {
+        margin-top: 1rem;
+    }
+
+    .container {
+        display: block;
+    }
+}

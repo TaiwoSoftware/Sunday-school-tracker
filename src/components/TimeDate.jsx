@@ -13,7 +13,7 @@ export default function TimeDate() {
 
   const formatDate = (date) => {
     const options = {
-      weekday: "long",
+      // weekday: "long",
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -26,13 +26,13 @@ export default function TimeDate() {
   };
 
   if (dateTime === null) {
-    return null; 
+    return null;
   }
 
   return (
-    <div>
-      <div>{formatDate(dateTime)}</div>
-      <div>{formatTime(dateTime)}</div>
+    <div className="outline-none timeContainer text-center mt-[-1.3rem]  flex items-center gap-4 p-2  text-red-500 font-bold bg-black font-mono shadow-lg rounded-lg">
+      <p className="text-center">{formatTime(dateTime)}</p>
+      <p className="text-sm text-center time">{formatDate(dateTime)}</p>
     </div>
   );
 }
