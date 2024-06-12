@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import FormInput from "@/components/FormInput";
+import TimeDate from "@/components/TimeDate";
 import { useState } from "react";
 export default function page() {
   const [name, setName] = useState("");
@@ -50,6 +51,7 @@ export default function page() {
     lg:max-w-2xl
     md:max-w-xl md:p-5 md:px-2 md:mb-10 sm:max-w-sm"
     >
+      <TimeDate />
       {afterSubmission === false ? (
         <>
           <h1 className="text-center font-bold text-2xl ">Send me a message</h1>
