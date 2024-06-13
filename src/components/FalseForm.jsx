@@ -33,7 +33,7 @@ export default function FalseForm() {
             data={name}
             type="text"
             handleChange={handleName}
-            styling="absolute mt-[-3rem] ml-[31rem]"
+            styling="absolute tickMark mt-[-3rem] ml-[28rem]"
             valid={"name"}
             placeholder={"Your name"}
           />
@@ -43,7 +43,7 @@ export default function FalseForm() {
             data={name}
             handleChange={handleName}
             type="text"
-            styling="absolute mt-[-3rem] ml-[31rem] hidden"
+            styling="absolute tickMark mt-[-3rem] ml-[31rem] hidden"
             valid={"name"}
             placeholder={"Your name"}
           />
@@ -56,7 +56,7 @@ export default function FalseForm() {
             data={email}
             valid={"email"}
             type="email"
-            styling="absolute mt-[-3rem] ml-[31rem]"
+            styling="absolute tickMark mt-[-3rem] ml-[28rem]"
             placeholder={"Email address"}
           />
         ) : (
@@ -66,7 +66,7 @@ export default function FalseForm() {
             handleChange={handleEmail}
             valid={"email"}
             type="email"
-            styling="absolute mt-[-3rem] ml-[31rem] hidden"
+            styling="absolute tickMark mt-[-3rem] ml-[31rem] hidden"
             placeholder={"Email address"}
           />
         )}
@@ -77,7 +77,7 @@ export default function FalseForm() {
             handleChange={handleTel}
             type="tel"
             valid={"tel"}
-            styling="absolute mt-[-4rem] ml-[31rem]"
+            styling="absolute tickMark mt-[-4rem] ml-[28rem]"
             placeholder={"Telephone"}
           />
         ) : (
@@ -87,7 +87,7 @@ export default function FalseForm() {
             handleChange={handleTel}
             type="tel"
             valid={"tel"}
-            styling="absolute mt-[-3rem] ml-[31rem] hidden"
+            styling="absolute tickMark mt-[-3rem] ml-[31rem] hidden"
             placeholder={"Telephone"}
           />
         )}
@@ -96,7 +96,7 @@ export default function FalseForm() {
           data={date}
           handleChange={handleDate}
           valid={"date"}
-          styling="absolute mt-[-3rem] ml-[31.5rem]"
+          styling="absolute tickMark mt-[-3rem] ml-[29.5rem]"
           placeholder={"Date Of Birth"}
         />) : (
           <FormInput
@@ -104,7 +104,7 @@ export default function FalseForm() {
           data={date}
           handleChange={handleDate}
           valid={"date"}
-          styling="absolute mt-[-3rem] ml-[31rem] hidden"
+          styling="absolute tickMark mt-[-3rem] ml-[31rem] hidden"
           placeholder={"Date Of Birth"}
         />
         )}

@@ -6,11 +6,19 @@
     .reduceWidth {
         max-width: 40rem;
     }
+
+    .tickMark {
+        display: none;
+    }
 }
 
 @media (max-width:670px) {
     .reduceWidth {
         max-width: 36rem;
+    }
+
+    .tickMark {
+        display: none;
     }
 
     .formStyle {
@@ -31,6 +39,10 @@
         max-width: 32rem;
     }
 
+    .tickMark {
+        display: none;
+    }
+
     .formStyle {
         padding: 0;
     }
@@ -47,6 +59,10 @@
 @media (max-width:520px) {
     .reduceWidth {
         max-width: 31rem;
+    }
+
+    .tickMark {
+        display: none;
     }
 
     .timeContainer {
@@ -67,6 +83,10 @@
         padding: 0;
     }
 
+    .tickMark {
+        display: none;
+    }
+
     .container {
         display: block;
     }
@@ -85,6 +105,10 @@
         max-width: 24rem;
     }
 
+    .tickMark {
+        display: none;
+    }
+
     .timeContainer {
         margin-top: 1rem;
     }
@@ -99,6 +123,10 @@
         max-width: 24rem;
     }
 
+    .tickMark {
+        display: none;
+    }
+
     .timeContainer {
         margin-top: 1rem;
     }
@@ -111,6 +139,10 @@
 @media (max-width: 390px) {
     .reduceWidth {
         max-width: 20rem;
+    }
+
+    .tickMark {
+        display: none;
     }
 
     .timeContainer {

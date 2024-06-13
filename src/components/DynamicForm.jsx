@@ -21,7 +21,7 @@ export default function DynamicForm({}) {
             handleChange={handleChange}
             data={name}
             valid="name"
-            styling="absolute mt-[-3rem] ml-[31rem] "
+            styling="absolute tickMark mt-[-3rem] ml-[28rem] "
             placeholder="Your name"
           />
         ) : (
@@ -30,7 +30,7 @@ export default function DynamicForm({}) {
             handleChange={handleChange}
             data={name}
             valid="name"
-            styling="absolute mt-[-3rem] ml-[31rem] hidden"
+            styling="absolute tickMark mt-[-3rem] ml-[28rem] hidden"
             placeholder="Your name"
           />
         )}
@@ -41,7 +41,7 @@ export default function DynamicForm({}) {
             handleChange={handleEmail}
             data={email}
             valid="class"
-            styling="absolute mt-[-3rem] ml-[31rem] "
+            styling="absolute tickMark mt-[-3rem] ml-[28rem] "
             placeholder="Email"
           />
         ) : (
@@ -50,7 +50,7 @@ export default function DynamicForm({}) {
             handleChange={handleEmail}
             data={email}
             valid="class"
-            styling="absolute mt-[-3rem] ml-[31rem] hidden"
+            styling="absolute tickMark mt-[-3rem] ml-[28rem] hidden"
             placeholder="Email"
           />
         )}
