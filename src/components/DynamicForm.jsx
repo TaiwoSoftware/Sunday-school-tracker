@@ -17,6 +17,7 @@ export default function DynamicForm({}) {
       <form className=" formStyle  px-24 pb-20 ">
         {name !== "" ? (
           <FormInput
+          id='text'
             type="text"
             handleChange={handleChange}
             data={name}
@@ -26,6 +27,7 @@ export default function DynamicForm({}) {
           />
         ) : (
           <FormInput
+          id='text'
             type="text"
             handleChange={handleChange}
             data={name}
@@ -37,6 +39,7 @@ export default function DynamicForm({}) {
 
         {email !== "" ? (
           <FormInput
+          id='email'
             type="text"
             handleChange={handleEmail}
             data={email}
@@ -46,6 +49,7 @@ export default function DynamicForm({}) {
           />
         ) : (
           <FormInput
+          id='email'
             type="text"
             handleChange={handleEmail}
             data={email}
