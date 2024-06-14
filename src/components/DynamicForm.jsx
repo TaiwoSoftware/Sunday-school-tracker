@@ -4,6 +4,7 @@ import FormInput from "./FormInput";
 export default function DynamicForm({}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [userClass, setUserClass] = useState("");
 
   const handleChange = (e) => {
     setName(e.target.value);
@@ -11,6 +12,10 @@ export default function DynamicForm({}) {
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
+
+  const handleCLass = (e) => {
+    setUserClass(e.target.value)
+  }
   return (
     <>
       <h1 className="text-center font-bold mb-10 text-2xl ">ATTENDANCE</h1>
@@ -36,6 +41,26 @@ export default function DynamicForm({}) {
             placeholder="Your name"
           />
         )}
+
+        {userClass !== '' ? (
+          <FormInput 
+          id='class'
+            type='text'
+            handleChange={handleCLass}
+            data={userClass}
+            valid='class'
+            styling='absolute tickMark mt-[-3rem] ml-[28rem]'
+            placeholder='Your class'
+          />
+        ) : (<FormInput 
+          id='class'
+            type='text'
+            data={userClass}
+            handleChange={handleCLass}
+            valid='class'
+            styling='absolute tickMark mt-[-3rem] ml-[28rem] hidden'
+            placeholder='Your class'
+          />)}
 
         {email !== "" ? (
           <FormInput

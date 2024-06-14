@@ -13,7 +13,6 @@ export default function TimeDate() {
 
   const formatDate = (date) => {
     const options = {
-      // weekday: "long",
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -22,7 +21,11 @@ export default function TimeDate() {
   };
 
   const formatTime = (date) => {
-    return date.toLocaleTimeString();
+    const options = {
+      hour: "numeric",
+      minute: "numeric",
+    };
+    return date.toLocaleTimeString([], options);
   };
 
   if (dateTime === null) {
@@ -30,7 +33,7 @@ export default function TimeDate() {
   }
 
   return (
-    <div className="outline-none timeContainer text-center mt-[-1.3rem]  flex items-center gap-4 p-2  text-red-500 font-bold bg-black font-mono shadow-lg rounded-lg">
+    <div className="outline-none timeContainer text-center mt-[-1.3rem] mx-auto flex items-center gap-4 p-2  text-white font-bold bg-black font-mono shadow-lg rounded-lg">
       <p className="text-center">{formatTime(dateTime)}</p>
       <p className="text-sm text-center time">{formatDate(dateTime)}</p>
     </div>
